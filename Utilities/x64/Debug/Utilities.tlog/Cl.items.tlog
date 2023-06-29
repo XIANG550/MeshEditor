@@ -1,0 +1,13 @@
+C:\proj\MeshEditor\Utilities\src\Dijkstra.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\Dijkstra.obj
+C:\proj\MeshEditor\Utilities\src\Geometry\Circle.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\Circle.obj
+C:\proj\MeshEditor\Utilities\src\Geometry\EuclideanGeometry2D.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\EuclideanGeometry2D.obj
+C:\proj\MeshEditor\Utilities\src\Geometry\HyperbolicGeometry.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\HyperbolicGeometry.obj
+C:\proj\MeshEditor\Utilities\src\LineCylinder.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\LineCylinder.obj
+C:\proj\MeshEditor\Utilities\src\MeshFormConverter.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\MeshFormConverter.obj
+C:\proj\MeshEditor\Utilities\src\MeshMarker.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\MeshMarker.obj
+C:\proj\MeshEditor\Utilities\src\MeshMerger.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\MeshMerger.obj
+C:\proj\MeshEditor\Utilities\src\StringParser.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\StringParser.obj
+C:\proj\MeshEditor\Utilities\src\PointSphere.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\PointSphere.obj
+C:\proj\MeshEditor\Utilities\src\Topology\EuclideanCoveringSpace.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\EuclideanCoveringSpace.obj
+C:\proj\MeshEditor\Utilities\src\Topology\HyperbolicCoveringSpace.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\HyperbolicCoveringSpace.obj
+C:\proj\MeshEditor\Utilities\src\Topology\MeshSlicer.cpp;C:\proj\MeshEditor\Utilities\x64\Debug\MeshSlicer.obj

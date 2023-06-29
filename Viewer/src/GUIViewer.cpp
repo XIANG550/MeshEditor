@@ -11,7 +11,6 @@ void OTEViewer::Init()
 	//InitMouse();
 }
 
-
 void OTEViewer::InitMenu()
 {
 	callback_init = [this](igl::viewer::Viewer& viewer)
@@ -23,6 +22,9 @@ void OTEViewer::InitMenu()
 		//viewer.ngui->addButton("Load Texture", [this]() {this->LoadTexture(); });
 		viewer.ngui->addButton("Save Mesh", [this]() {this->SaveMesh(); });
 		viewer.ngui->addButton("Save Current Scece", [this]() {this->SaveCurrentScene(); });
+
+		viewer.ngui->addGroup("Image Procs");
+		viewer.ngui->addButton("Save Image", [this]() {this->SaveImage(); });
 		//viewer.ngui->addGroup("Cutting System");
 		//viewer.ngui->addButton("Load Marker", [this] { this->LoadMarker(); });
 		//viewer.ngui->addButton("Save Marker", [this] {this->SaveMarker(); });
@@ -58,13 +60,29 @@ void OTEViewer::InitMenu()
 			[this](const bool &v) {this->show_vertex_labels_ = v; this->UpdateMeshViewer(); },
 			[this]() -> bool {return this->show_vertex_labels_; }
 		);*/
-
-
 		viewer.screen->performLayout();
 		return false; 
 	};
 
-	
+}
+
+void OTEViewer::SaveImage() {
+
+	// Allocate temporary buffers
+	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> R(4096, 4096);
+	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> G(4096, 4096);
+	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> B(4096, 4096);
+	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> A(4096, 4096);
+
+	// copy framebuffer into R, G, B, A 
+	core.draw_buffer(data, opengl, true, R, G, B, A);
+	// Saving the data as a png
+	std::string fname = igl::file_dialog_save();
+	if (fname.length() == 0)
+		return;
+	// save
+	igl::png::writePNG(R, G, B, A, fname);
+
 }
 
 void OTEViewer::InitKeyboard()
@@ -156,8 +174,6 @@ void OTEViewer::SaveMesh()
 		OpenMesh::IO::write_mesh(sliced_mesh_, fname, opt);
 	}
 
-
-	
 }
 
 void OTEViewer::SaveCurrentScene()

@@ -3,27 +3,27 @@
   EuclideanGeometry2D.cpp
   HyperbolicGeometry.cpp
   LineCylinder.cpp
-src\LineCylinder.cpp(11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\LineCylinder.cpp(11,19): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
   MeshFormConverter.cpp
-src\MeshFormConverter.cpp(5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(86): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(87): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\MeshFormConverter.cpp(110): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(5,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(8,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(40,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(43,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(86,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(87,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshFormConverter.cpp(110,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   MeshMarker.cpp
   MeshMerger.cpp
-src\MeshMerger.cpp(26): warning C4244: 'argument': conversion from '__int64' to 'const int', possible loss of data
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\MeshMerger.cpp(26,103): warning C4244: “参数”: 从“__int64”转换到“const int”，可能丢失数据
   StringParser.cpp
   PointSphere.cpp
   EuclideanCoveringSpace.cpp
-src\Topology\EuclideanCoveringSpace.cpp(27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\Topology\EuclideanCoveringSpace.cpp(43): warning C4244: 'argument': conversion from '__int64' to 'const int', possible loss of data
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\EuclideanCoveringSpace.cpp(27,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\EuclideanCoveringSpace.cpp(43,92): warning C4244: “参数”: 从“__int64”转换到“const int”，可能丢失数据
   HyperbolicCoveringSpace.cpp
-src\Topology\HyperbolicCoveringSpace.cpp(30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\Topology\HyperbolicCoveringSpace.cpp(46): warning C4244: 'argument': conversion from '__int64' to 'const int', possible loss of data
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\HyperbolicCoveringSpace.cpp(30,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\HyperbolicCoveringSpace.cpp(46,92): warning C4244: “参数”: 从“__int64”转换到“const int”，可能丢失数据
   MeshSlicer.cpp
-src\Topology\MeshSlicer.cpp(26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-src\Topology\MeshSlicer.cpp(154): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Utilities.vcxproj -> C:\Code\MeshEditor\x64\Release\Utilities.lib
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\MeshSlicer.cpp(26,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\proj\MeshEditor-master\MeshEditor-master\Utilities\src\Topology\MeshSlicer.cpp(154,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Utilities.vcxproj -> C:\proj\MeshEditor-master\MeshEditor-master\x64\Release\Utilities.lib

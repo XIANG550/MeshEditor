@@ -5,6 +5,7 @@
 
 #include <igl/viewer/Viewer.h>
 #include <igl/png/texture_from_file.h>
+#include <igl/png/writePNG.h>
 
 #include <nanogui/formhelper.h>
 #include <nanogui/screen.h>
@@ -46,8 +47,6 @@ private:
 	Eigen::MatrixXd TC_;
 	Eigen::MatrixXd UV_;
 
-	
-
 	// texture RGB channels;
 	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> R_;
 	Eigen::Matrix<unsigned char, Eigen::Dynamic, Eigen::Dynamic> G_;
@@ -66,9 +65,7 @@ private:
 
 	bool selection_mode_ = false;
 
-
 	std::list<OpenMesh::VertexHandle> selected_verts_;
-
 
 protected:
 
@@ -82,6 +79,7 @@ protected:
 	void LoadTexture();
 	void SaveMesh();
 	void SaveCurrentScene();
+	void SaveImage();
 
 	void UpdateMeshData(SurfaceMesh &mesh);  
 	void UpdateTextureCoordData(SurfaceMesh &mesh);
